@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+
+
+<body>
+<center>
+<img  src="{% static '/images/vacancies2003.jpg' %}">
+    <img  src="{% static '/images/vacancies2004.jpg' %}">
+    <img  src="{% static '/images/vacancies2005.jpg' %}">
+    <img  src="{% static '/images/vacancies2006.jpg' %}">
+    <img  src="{% static '/images/vacancies2007.jpg' %}">
+    <img  src="{% static '/images/vacancies2008.jpg' %}">
+    <img  src="{% static '/images/vacancies2009.jpg' %}">
+    <img  src="{% static '/images/vacancies2010.jpg' %}">
+    <img  src="{% static '/images/vacancies2011.jpg' %}">
+    <img  src="{% static '/images/vacancies2012.jpg' %}">
+    <img  src="{% static '/images/vacancies2013.jpg' %}">
+    <img  src="{% static '/images/vacancies2014.jpg' %}">
+    <img  src="{% static '/images/vacancies2015.jpg' %}">
+    <img  src="{% static '/images/vacancies2016.jpg' %}">
+    <img  src="{% static '/images/vacancies2017.jpg' %}">
+    <img  src="{% static '/images/vacancies2018.jpg' %}">
+    <img  src="{% static '/images/vacancies2019.jpg' %}">
+    <img  src="{% static '/images/vacancies2020.jpg' %}">
+    <img  src="{% static '/images/vacancies2021.jpg' %}">
+    <img  src="{% static '/images/vacancies2022.jpg' %}">
+    <img  src="{% static '/images/vacancies2023.jpg' %}">
+    <img  src="{% static '/images/vacancies2024.jpg' %}">
+
+
+{% for table in tables %}
+<div>
+    <h2>{{ table.title}}</h2>
+</div>
+<div>
+    {{ table.html_table|safe }}
+</div>
+<div>
+  данные за {{ table.year }} год
+</div>
+{% endfor %}
+
+{% endblock %}
+</center>
+</body>

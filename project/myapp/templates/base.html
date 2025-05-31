@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #010203;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+        .nav-home {
+    background-color: #4CAF50;
+}
+
+        body {
+  font-family: 'Roboto', Arial, sans-serif;
+  color: #0a0a0a;
+}
+   img.center { text-align:center;
+
+    }
+
+    </style>
+</head>
+
+<nav>
+  <ul>
+    <li><a href="/">Главная</a></li>
+    <li><a href="/sal/">зарплаты</a></li>
+    <li><a href="/skills/">скиллы</a></li>
+    <li><a href="/geo/">География</a></li>
+  </ul>
+</nav>
+<body>
+{% block content %}
+{% endblock %}
+</body>
+</html>

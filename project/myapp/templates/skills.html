@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+
+
+
+<center>
+<img  src="{% static '/images/skills.jpg' %}">
+<h1>Таблица</h1>
+    {{ datafr|safe }}
+</center>
+
+{% endblock %}
